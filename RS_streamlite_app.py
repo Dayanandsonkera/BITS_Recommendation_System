@@ -36,7 +36,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.header(' Dayanand Movie Recommender System')
+st.header(' Dayanand Sonkera Movie Creations....!')
 movies = pickle.load(open('movie_list_1.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
 
@@ -71,7 +71,5 @@ if st.button('Show Recommendation'):
     with col7:
         st.text(recommended_movie_names[6])
         st.image(recommended_movie_posters[6])
-    with col7:
-        st.text(recommended_movie_names[7])
-        st.image(recommended_movie_posters[7])
+   
     
